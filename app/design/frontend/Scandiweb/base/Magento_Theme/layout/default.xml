@@ -8,4 +8,10 @@
             <block class="Magento\Framework\View\Element\Template" name="free_shipping_banner" template="Magento_Theme::free_shipping_banner.phtml" />
         </container>
     </referenceContainer>
+
+    <referenceContainer name="page.wrapper">
+        <container name="page.bottom" as="page_bottom" htmlTag="div" htmlClass="page-bottom" before="page-footer" />
+    </referenceContainer>
+
+    <move element="form.subscribe" destination="page.bottom" />
 </page>
